@@ -9,15 +9,17 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
+    justify-content: center;
     padding: 20px;
 }
 .box {
     width: 273px;
     height: 220px;
-    border-radius: 1px;
+    border-radius: 2px;
     padding: 20px;
-    display: flex;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(3, 50px);
+    grid-template-rows: repeat(2, 50px);
     gap: 20px;
 }
 /* Two different colors for boxes */
@@ -28,8 +30,30 @@
     background-color: #6A040F;
 }
 .circle {
-    width: 100px;
-    height: 100px;
-    border-color: #748CAB;
-    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #748CAB;
+}
+
+/* Different circle positions from figma */
+.card-1 {
+    justify-content: start;
+    align-content: start;
+}
+.card-2 {
+    justify-content: end;
+    align-content: end;
+}
+.card-3 {
+    justify-content: center;
+    align-content: space-between;
+}
+.card-4 {
+    justify-content: space-between;
+    align-content: center;
+}
+.card-5 {
+    justify-content: center;
+    align-content: center;
 }
